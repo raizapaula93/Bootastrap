@@ -5,12 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <style>
-        .tm-social {
-          width: 50px;
-          height: 50px;
-        }
-      </style>
+<style>
+
+    body {
+    background-color: #8cbe76;
+    font-family: sans-serif;
+    transition: all 1s ease-in-out;
+    }
+
+      .carousel {
+    border-radius: 55px 55px 55px 55px;
+    overflow: hidden;
+    height: 500px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+      .tm-social {
+          height: 25px;
+          width: 25px;
+      }
+
+      .bgActive {
+          background-color: #edfcf3;
+}
+ 
+  </style>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -20,7 +42,7 @@
   <body>
    
      <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-success">
         <a class="text-white navbar-brand" href="#">Amor de Mudas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,15 +51,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="text-white nav-link" href="#">Feng-shui<span class="sr-only">(current)</span></a>
+              <a class="text-white nav-link" href="#feng shui">Feng-shui<span class="sr-only">(current)</span></a>
             </li>
            
             <li class="nav-item active">
-                <a class="text-white nav-link" href="#">Ambientes decorados<span class="sr-only">(current)</span></a>
+                <a class="text-white nav-link" href="#ambientes decorados">Ambientes decorados<span class="sr-only">(current)</span></a>
               </li>
 
               <li class="nav-item active">
-                <a class="text-white nav-link" href="#">Recuperação de terrenos<span class="sr-only">(current)</span></a>
+                <a class="text-white nav-link" href="#hortas urbanas">Hortas urbanas<span class="sr-only">(current)</span></a>
               </li>
 
 
@@ -46,13 +68,13 @@
                 Mudas disponíveis
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Suculentas</a>
+                <a class="dropdown-item" href="#suculentas">Suculentas</a>
                 <a class="dropdown-item" href="#">Folhosas</a>
                 <a class="dropdown-item" href="#">Flores</a>
                 <a class="dropdown-item" href="#">Resistentes</a>
                 <a class="dropdown-item" href="#"></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Não encontrou o que procura?</a>
+                <a class="dropdown-item" href="#contato">Não encontrou o que procura?</a>
               </div>
             </li>
             
@@ -65,17 +87,18 @@
       </nav>
       <!--/Menu-->
 
-
+     
       <!--/Carousel-->
     <div class="row mt-xl-5 d-flex justify-content-center">
-     <div class="col-md-11 p-0">
+     <div class="col-md-11 p-0"
+     >
    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner ">
       <div class="carousel-item active">
         <img src="https://www.tuacasa.com.br/wp-content/uploads/2020/02/tipos-de-suculenta-0-1-1280x720.jpg" class="d-block w-100" alt="Suculentas">
       </div>
@@ -99,41 +122,45 @@
 </div>
      <!--/Carousel-->
 
+
+<!-- Testar row ao invés de jumbotron -->
     <!--Jumbotron-->
-  <div class="jumbotron jumbotron-fluid bg-info">
+  <div class="jumbotron jumbotron-fluid text-light mb-3 bg-info">
     <div class="container">
-      <h1 class="display-4">Teste do titulo</h1>
-      <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+      <h1 class="display-4">Deixe seu ambiente mais leve</h1>
+      <p class="lead">Ornamentar o ambiente com plantas proporciona calma, clareza e maior bem-estar</p>
     </div>
   </div>
   <!--/Jumbotron-->
 
-   
+
+
+
   <!--Cards-->
   <div class="container">
-    <div class="card-group">
-        <div class="card">
-          <img src="https://plantasemcasa.com.br/wp-content/uploads/2021/03/cactos-e-suculentas.jpg" class="card-img-top" alt="Mini cactos e suculentas">
+    <div class="card-deck p-3">
+        <div class="card" id = "suculentas">
+          <img src="https://www.telegrafoonline.com.br/wp-content/uploads/2021/09/muda-%C3%A1rvore-planta-1-1280x720.jpg" class="card-img-top" alt="Mini cactos e suculentas">
           <div class="card-body">
             <h5 class="card-title">Mini-cactus e Suculentas</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            
           </div>
         </div>
-        <div class="card">
-          <img src="https://s2.glbimg.com/N8GsHc7e94RLHKyl4iX70iTDRF4=/620x455/e.glbimg.com/og/ed/f/original/2020/12/14/blossom-3702068_1920.jpg" class="card-img-top" alt="Violetas">
+        <div class="card" id =" hortas urbanas">
+          <img src="https://jardimdomundo.com/wp-content/uploads/2016/09/tumblr_m55n38cA6F1qbazqao1_1280.jpg" class="card-img-top" alt="Violetas">
           <div class="card-body">
-            <h5 class="card-title">Violetas</h5>
+            <h5 class="card-title">Hortas Urbanas</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            
           </div>
         </div>
-        <div class="card">
-          <img src="https://s2.glbimg.com/8_B6ZyQr5zOtQ-8iHYouR8iZI-k=/0x0:886x600/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/c/A/x6iidJS3agRfJTcPSoaw/plantas-em-casa.jpeg" class="card-img-top" alt="Sala com plantas">
+        <div class="card " id = "feng shui">
+          <img src="https://media-manager.noticiasaominuto.com/1280/naom_5af1b86e58ba4.jpg" class="card-img-top" alt="Sala com plantas">
           <div class="card-body">
             <h5 class="card-title">Feng-shui e bem-estar</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            
           </div>
         </div>
       </div>
@@ -142,9 +169,9 @@
 
     <!--Texto e Video-->
 
-    <div class="row mt-5 mb-5">
+    <div class="row mt-5 mb-5" id = "ambientes decorados">
         <div class="col-md-6">
-          <h3>Texto teste</h3>
+          <h3>Ambientes decorados</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga deleniti deserunt laboriosam voluptas
             mollitia consequatur possimus esse aperiam pariatur aspernatur repudiandae expedita neque libero quo, est et!
             Magni, dolore.
@@ -169,26 +196,35 @@
     <div class="row mb-5">
         <div class="col-md-12">
           <h4 class="text-center">
-            Entre em contato com a gente
+            Entre em contato:
           </h4>
         </div>
       </div>
   
       <div class="row d-flex align-items-center">
         <div class="col-md-6">
-          <form>
+          <form id ="contato">
+
             <div class="form-group">
-              <label for="exampleFormControlInput1">Endereço de email</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              <label for="exampleFormControlInput1">Nome</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome" onkeyup = 'validaNome()'>
+              <div id= 'txtNome'></div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput2">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nome@exemplo.com" onkeyup = 'validaEmail()'>
+              <div id = 'txtEmail'></div>
             </div>
            
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="exampleFormControlTextarea1">Escreva sua mensagem</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" onkeyup="validaAssunto()"></textarea>
+              <div id ='txtAssunto'></div>
             </div>
   
             <div class="form-group d-flex justify-content-end">
-              <button class="btn btn-outline-success">Enviar</button>
+              <button class="btn btn-outline-success" onclick="enviar()">Enviar</button>
             </div>
           </form>
         </div>
@@ -243,7 +279,7 @@
     <!--jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
+  <script src="./assets/script/script.js"></script>
     
   </body>
 </html>
